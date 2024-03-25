@@ -1,0 +1,118 @@
+{
+  "hero": {
+    "title1": "Backend Developer",
+    "title2": "and Blockchain",
+    "btnText": "My CV",
+    "btnText2": "Presentation",
+    "firstName": "Andres",
+    "lastName": "Jimenez",
+    "heroContent": [
+      {
+        "count": "2+",
+        "text": "Years of experience in web development"
+      },
+      {
+        "count": "10+",
+        "text": "Projects worked throughout my career"
+      }
+    ]
+  },
+  "hireme": {
+    "title": "Hire me",
+    "subtitle": "For you projects",
+    "text": "A strong backend development experience and a constant commitment to innovation and learning, I deliver high-quality solutions that drive performance and efficiency. My ability to develop robust APIs, manage databases, optimize performance and ensure security, along with my knowledge of blockchain, make me the ideal candidate to take your projects to the next level.",
+    "btnText": "Contact me"
+  },
+  "servicesT": {
+    "title": "Services",
+    "subtitle": "What do I offer?",
+    "serviceContent": [
+      {
+        "title": "RESTFul API development",
+        "para": "Creation of programming interfaces for the communication of one or several applications",
+        "logo": "../../assets/images/Services/codigo.png"
+      },
+      {
+        "title": "Performance optimization",
+        "para": "Improvements in efficiency and response speed in applications in addition to identifying performance problems",
+        "logo": "../../assets/images/Services/rendimiento.png"
+      },
+      {
+        "title": "Application security",
+        "para": "Implementation of security measures to protect the application and user data",
+        "logo": "../../assets/images/Services/seguridad-informatica.png"
+      }
+    ]
+  },
+  "skillsT": {
+    "title": "Skills",
+    "subtitle": "Mis habilidades",
+    "skillsContent": [
+      {
+        "name": "React.js",
+        "para": "Creating interfaces"
+      },
+      {
+        "name": "Python",
+        "para": "Code Simplicity"
+      },
+      {
+        "name": "Django",
+        "para": "Adaptability"
+      },
+      {
+        "name": "PostgreSQL",
+        "para": "Power and performance"
+      },
+      {
+        "name": "MySQL",
+        "para": "Efficient data management"
+      },
+      {
+        "name": "SQLite3",
+        "para": "Light, portable and efficient"
+      }
+    ]
+  },
+  "projectT": {
+    "title": "Projects",
+    "subtitle": "Developed projects",
+    "projectContent": [
+      {
+        "title": "Shopping cart",
+        "link": "https://www.google.com/"
+      },
+      {
+        "title": "Social Media",
+        "link": "https://www.youtube.com/?app"
+      },
+      {
+        "title": "Microservices",
+        "link": "https://www.google.com/"
+      },
+      {
+        "title": "Api RESTFul",
+        "link": "https://www.google.com/"
+      }
+    ]
+  },
+
+  "contacts": {
+    "title": "Send me a email or follow me in my social media",
+    "subtitle": "",
+    "socialMedia": [
+      {
+        "text": "elpaitonero@gmail.com",
+        "link": "elpaitonero@gmail.com"
+      },
+      {
+        "text": "+57 354 5744 5847",
+        "link": "https://wa.me/1234567890"
+      },
+      {
+        "text": "paitonero",
+        "link": "https://www.instagram.com/paitonero/"
+      }
+    ]
+  }
+}
