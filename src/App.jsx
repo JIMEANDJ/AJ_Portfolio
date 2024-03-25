@@ -1,4 +1,3 @@
-// import components
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Service from "./components/Services";
