@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <div className="max-w-full overflow-hidden">
+    <div className="overflow-hidden">
       <Hero />
       <Skills />
       <Service />

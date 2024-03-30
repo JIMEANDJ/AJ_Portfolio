@@ -1,11 +1,19 @@
 {
   "hero": {
     "title1": "Desarrollador Backend",
-    "title2": "y Blockchain",
+    "title2": " y Blockchain",
     "btnText": "Mi CV",
     "btnText2": "Presentación",
     "firstName": "Andres",
     "lastName": "Jimenez",
+    "videoContent": [
+      {
+        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      },
+      {
+        "video": "https://www.youtube.com/embed/3ssL8vx7Xhg?si=RH0Tu3pmWdR0UCQO"
+      }
+    ],
     "heroContent": [
       {
         "count": "2+",

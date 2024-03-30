@@ -79,9 +79,9 @@ const Skills = () => {
         <h2 className="text-grayAsh" data-aos="fade-down">
           {t("skillsT.title")}
         </h2>
-        {/* <h4 className="subtitle" data-aos="fade-down">
+        <h4 className="subtitle" data-aos="fade-down">
           {skills.subtitle}
-        </h4> */}
+        </h4>
         <br />
         <div className="flex flex-wrap gap-4 justify-center">
           {skillsT.skillsContent.map((skill, i) => (
@@ -108,7 +108,7 @@ const Skills = () => {
                   }}
                   className="text-xl absolute top-3 right-3"
                 >
-                  {/* {createElement(skills.icon)} */}
+                  {createElement(skills.icon)}
                 </div>
               </div>
             </div>

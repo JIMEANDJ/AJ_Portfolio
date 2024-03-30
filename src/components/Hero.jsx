@@ -1,114 +1,208 @@
-import { useEffect, useState } from "react"
-// import { content } from "../Content"
+/* eslint-disable no-unused-vars */
+import { useState } from "react"
 import Header from "./Header"
 import { useTranslation } from "react-i18next"
 import i18next from 'i18next'
 import { hero } from '../translations/ES/global.json'
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper"
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import Modal from "react-modal";
+
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa"
+import { SiGmail } from "react-icons/si"
+import { IoCloseSharp } from "react-icons/io5"
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    maxWidth: "23rem",
+    width: "90%",
+  },
+  overlay: {
+    backgroundColor: "white",
+    padding: "2rem",
+  },
+}
+
+Modal.setAppElement("#root");
 const Hero = () => {
   // const { hero } = content
 
   const [t, i18n] = useTranslation("global")
 
   const [language, setLanguage] = useState(i18next.language)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isSwiperVisible, setIsSwiperVisible] = useState(true)
 
-  const cvFiles = {
-    en: "/AndresJimenez-CV-ATS.pdf",
-    es: "/AndresJimenez-CV.pdf",
+  function handleOpenModal() {
+    setIsModalOpen(true);
+    setIsSwiperVisible(false);
   }
 
-  const videoLinks = {
-    es: "https://www.youtube.com/watch?v=lsEqmtE9UA0",
-    en: "https://www.youtube.com/watch?v=yZIummTz9mM",
-  }
-
-  const handleDownload = () => {
-    const newLanguage = language === 'en' ? 'es' : 'en'
-    i18next.changeLanguage(newLanguage)
-    window.open(cvFiles[newLanguage], '_blank')
-    setLanguage(newLanguage)
-  }
-
-  const handleWatch = () => {
-    const newLanguage = language === 'en' ? 'es' : 'en'
-    i18next.changeLanguage(newLanguage)
-    window.open(videoLinks[language], '_blank')
-    setLanguage(newLanguage)
+  function handleCloseModal() {
+    setIsModalOpen(false);
+    setIsSwiperVisible(true);
   }
 
   return (
 
     <section
       id="home"
-      className="overflow-hidden"
+      className="overflow-hidden relative"
     >
-      <div className="max-h-screen sm:min-h-screen relative flex md:flex-row flex-col-reverse 
-  md:items-end justify-start m-0 sm:ml-24 items-center"
-      >
-        <div
-          data-aos="slide-left"
-          data-aos-delay="1200"
-          className="absolute h-full md:w-80 w-8/12 top-0 right-0 md:bg-dark2 bottom-0 
-          -z-10 flex items-center justify-center md:block"
-        >
-          <h1 className="md:rotate-90 md:absolute md:top-[30%] md:right-[-10%] text-ghostWhite 
-          md:text-ghostWhite hidden md:block z-20">
-            {hero.firstName}{" "}
-            <span
-              className="text-gray whitespace-nowrap"
-              style={{ whiteSpace: "nowrap" }}
-            >
-              {hero.lastName}
-            </span>
-          </h1>
-        </div>
 
+      <div
+        data-aos="slide-left"
+        data-aos-delay="1200"
+        className="absolute h-full md:w-80 w-8/12 top-0 right-0 md:bg-dark2 bottom-0 
+            -z-10 flex items-center justify-center md:block"
+      >
+        <h1 className="md:rotate-90 md:absolute md:top-[30%] md:right-[-10%] text-ghostWhite 
+            md:text-ghostWhite hidden md:block z-20">
+          {hero.firstName}{" "}
+          <span
+            className="text-gray whitespace-nowrap"
+            style={{ whiteSpace: "nowrap" }}
+          >
+            {hero.lastName}
+          </span>
+        </h1>
+      </div>
+
+      {/* Header */}
+      <div className="mb-20">
         <Header />
-        <div
-          className="pb-16 px-6 pt-5 md:pt-16"
-          data-aos="fade-down"
-        >
-          <h2 className="text-dark2">
-            {t("hero.title1")}
+      </div>
+
+      {/* Desarrollador */}
+      <div
+        className="flex justify-center md:justify-start items-center md:items-start pl-0 md:pl-72"
+        data-aos="fade-down"
+      >
+        {/* Titulo del desarrollador */}
+        <div className="">
+          <h2 className="text-dark2 text-center">
+            {t("hero.title1")}{" "}
           </h2>
-          <h2 className="text-dark2">
-            {t("hero.title2")}
+          <h2 className="text-dark2 text-center">
+            {" "}{t("hero.title2")}
           </h2>
-          <br />
-          <div className="flex justify-start gap-4">
-            <button className="btn" onClick={handleDownload}>
-              {t("hero.btnText")}
-            </button>
-            <button className="btn" onClick={handleWatch}>
-              {t("hero.btnText2")}
-            </button>
-          </div>
-          <div className="flex flex-col gap-10 mt-10">
-            {hero.heroContent.map(
-              (content, i) => (
-                <div
-                  key={i}
-                  data-aos="fade-down"
-                  data-aos-delay={i * 300}
-                  className={`flex items-center w-80 gap-5
-                ${i === 1 &&
-                    " flex-row-reverse text-right"
-                    }  `}
-                >
-                  <h3 className="text-dark2">
-                    {t(`hero.heroContent.${i}.count`)}
-                  </h3>
-                  <p className="text-dark2">
-                    {t(`hero.heroContent.${i}.text`)}
-                  </p>
-                </div>
-              )
-            )}
-          </div>
         </div>
       </div>
-    </section>
 
+      {/* Botones y carrousel */}
+      <div className="flex flex-col md:flex-row justify-center md:justify-start 
+      items-center gap-8 mt-12 pl-0 md:pl-28">
+
+        {/* Boton de descargar CV */}
+        <div className="flex justify-center items-center order-2 md:order-1">
+          <a href="/AndresJimenez-CV-ATS.pdf" download className="btn">Descargar CV</a>
+        </div>
+
+        {/* Carrousel de videos */}
+        {isSwiperVisible && (
+          <div className="flex justify-center items-center order-1 md:order-2">
+            <Swiper
+              pagination={{
+                clickable: true,
+              }}
+              data-aos="fade-left"
+              spaceBetween={20}
+              modules={[Navigation]}
+              navigation
+              className="rounded-3xl pb-0 md:pb-10 max-w-xs drop-shadow-primary"
+            >
+              {hero.videoContent.map(
+                (content, i) => (
+                  <SwiperSlide
+                    className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit"
+                    key={i}
+                  >
+                    <div
+                      className="flex flex-col gap-1 mt-2 items-center justify-center">
+                      <iframe width="300" height="160" src={t(`hero.videoContent.${i}.video`)}
+                        title="Video de YouTube"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </SwiperSlide>
+                )
+              )}
+            </Swiper>
+          </div>
+        )}
+
+        {/* Boton de Contacto */}
+        <div className="flex justify-center items-center order-3 md:order-3">
+          <button onClick={handleOpenModal} className="btn">Contacto</button>
+        </div>
+
+      </div>
+
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={handleCloseModal}
+        contentLabel="Mi Modal"
+        style={customStyles}
+      >
+        <div className="flex flex-row justify-between items-center mb-5">
+          <h1 className="text-2xl font-bold">Contactame</h1>
+          <button onClick={handleCloseModal}><IoCloseSharp size={24} /></button>
+        </div>
+        <div className="flex flex-row justify-center items-center gap-4 mb-2">
+          <FaLinkedin size={24} />
+          <a href="www.linkedin.com/in/andres-jimenez-89b504265"
+            target="_blank"
+            className="text-2xl font-medium">Andres Jimenez</a>
+        </div>
+        <div className="flex flex-row justify-center items-center gap-4 mb-2">
+          <SiGmail size={24} />
+          <p className="text-2xl text-black font-medium">Andrezjj6@gmail.com</p>
+        </div>
+        <div className="flex flex-row justify-center items-center gap-4 mb-2">
+          <FaWhatsapp size={24} />
+          <a href="https://wa.me/57999888433"
+            target="_blank"
+            className="text-2xl font-medium">+57 999 888 433</a>
+        </div>
+      </Modal>
+
+
+      {/* Contador de experiencia */}
+      <div className="flex flex-col md:flex-row justify-between md:items-center md:justify-start 
+      gap-5 md:gap-10 mt-10 mb-10 pl-0 md:pl-32">
+        {hero.heroContent.map(
+          (content, i) => (
+            <div
+              key={i}
+              data-aos="fade-down"
+              data-aos-delay={i * 300}
+              className={`flex items-center w-80 justify-center text-end md:text-end
+                  ${i === 1 &&
+                " md:text-end"
+                }  `}
+            >
+              <h3 className="text-dark2">
+                {t(`hero.heroContent.${i}.count`)}
+              </h3>
+              <p className="text-dark2">
+                {t(`hero.heroContent.${i}.text`)}
+              </p>
+            </div>
+          )
+        )}
+      </div>
+
+    </section>
 
   )
 }
