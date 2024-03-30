@@ -1,4 +1,3 @@
-// import components
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Service from "./components/Services";
@@ -9,7 +8,7 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <div className="max-w-full overflow-hidden">
+    <div className="overflow-hidden">
       <Hero />
       <Skills />
       <Service />

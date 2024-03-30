@@ -1,18 +1,18 @@
 /* Inria serif */
-@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap');
 /* Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* Paprika */
-@import url("https://fonts.googleapis.com/css2?family=Paprika&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-   html {
+  html {
     scroll-behavior: smooth;
-    background-color: #F7F7FF
+    background-color: #f7f7ff;
   }
   h1,
   h2,
@@ -41,7 +41,7 @@
   }
 
   p {
-    @apply font-Poppins text-[0.95rem] ;
+    @apply font-Poppins text-[0.95rem];
   }
   button {
     @apply font-Poppins;
@@ -49,6 +49,16 @@
   input,
   textarea {
     @apply bg-transparent outline-none font-Poppins;
+  }
+}
+
+.pl-70 {
+  padding-left: 260px;
+}
+
+@media (min-width: 768px) {
+  .md\:pl-70 {
+    padding-left: 260px;
   }
 }
 
