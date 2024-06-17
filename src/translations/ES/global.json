@@ -1,4 +1,30 @@
 {
+  "header": [
+    {
+      "link": "#inicio",
+      "text": "Inicio"
+    },
+    {
+      "link": "#habilidades",
+      "text": "Habilidades"
+    },
+    {
+      "link": "#servicios",
+      "text": "Servicios"
+    },
+    {
+      "link": "#proyectos",
+      "text": "Proyectos"
+    },
+    {
+      "link": "#testimonios",
+      "text": "Testimonios"
+    },
+    {
+      "link": "#contacto",
+      "text": "Contacto"
+    }
+  ],
   "hero": {
     "title1": "Desarrollador Backend",
     "title2": " y Blockchain",

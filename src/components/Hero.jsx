@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react"
-import Header from "./Header"
 import { useTranslation } from "react-i18next"
 import i18next from 'i18next'
 import { hero } from '../translations/ES/global.json'
@@ -39,7 +38,6 @@ const Hero = () => {
 
   const [t, i18n] = useTranslation("global")
 
-  const [language, setLanguage] = useState(i18next.language)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isSwiperVisible, setIsSwiperVisible] = useState(true)
 
@@ -55,37 +53,11 @@ const Hero = () => {
 
   return (
 
-    <section
-      id="home"
-      className="overflow-hidden relative"
-    >
-
-      <div
-        data-aos="slide-left"
-        data-aos-delay="1200"
-        className="absolute h-full md:w-80 w-8/12 top-0 right-0 md:bg-dark2 bottom-0 
-            -z-10 flex items-center justify-center md:block"
-      >
-        <h1 className="md:rotate-90 md:absolute md:top-[30%] md:right-[-10%] text-ghostWhite 
-            md:text-ghostWhite hidden md:block z-20">
-          {hero.firstName}{" "}
-          <span
-            className="text-gray whitespace-nowrap"
-            style={{ whiteSpace: "nowrap" }}
-          >
-            {hero.lastName}
-          </span>
-        </h1>
-      </div>
-
-      {/* Header */}
-      <div className="mb-20">
-        <Header />
-      </div>
+    <div id="home" className="mt-6">
 
       {/* Desarrollador */}
       <div
-        className="flex justify-center md:justify-start items-center md:items-start pl-0 md:pl-72"
+        className="flex justify-center items-center"
         data-aos="fade-down"
       >
         {/* Titulo del desarrollador */}
@@ -100,8 +72,8 @@ const Hero = () => {
       </div>
 
       {/* Botones y carrousel */}
-      <div className="flex flex-col md:flex-row justify-center md:justify-start 
-      items-center gap-8 mt-12 pl-0 md:pl-28">
+      <div className="flex flex-col md:flex-row justify-center 
+      items-center gap-8 mt-12 pl-0">
 
         {/* Boton de descargar CV */}
         <div className="flex justify-center items-center order-2 md:order-1">
@@ -132,7 +104,7 @@ const Hero = () => {
                       <iframe width="300" height="160" src={t(`hero.videoContent.${i}.video`)}
                         title="Video de YouTube"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-picture-in-picture" allowfullscreen></iframe>
+                        picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </SwiperSlide>
                 )
@@ -178,8 +150,7 @@ picture-in-picture" allowfullscreen></iframe>
 
 
       {/* Contador de experiencia */}
-      <div className="flex flex-col md:flex-row justify-between md:items-center md:justify-start 
-      gap-5 md:gap-10 mt-10 mb-10 pl-0 md:pl-32">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 mt-10 mb-10 pl-0">
         {hero.heroContent.map(
           (content, i) => (
             <div
@@ -202,7 +173,7 @@ picture-in-picture" allowfullscreen></iframe>
         )}
       </div>
 
-    </section>
+    </div>
 
   )
 }
