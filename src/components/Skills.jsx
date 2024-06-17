@@ -27,7 +27,6 @@ const Skills = () => {
   const { skills } = content;
   const { t } = useTranslation("global")
 
-  // const { skill } = skills
 
   const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -42,7 +41,7 @@ const Skills = () => {
   }
 
   return (
-    <section className="min-h-fit bg-dark2" id="skills">
+    <div className="bg-dark2" id="skills">
       {/* modal */}
       <Modal
         isOpen={modalIsOpen}
@@ -75,7 +74,7 @@ const Skills = () => {
       </Modal>
 
       {/* content */}
-      <div className="md:container px-5  py-14">
+      <div className="px-5 py-14">
         <h2 className="text-grayAsh" data-aos="fade-down">
           {t("skillsT.title")}
         </h2>
@@ -115,7 +114,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
