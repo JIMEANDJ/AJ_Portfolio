@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 const Services = () => {
   const { services } = content
   const { t } = useTranslation("global")
-  // const { service } = services
 
 
   return (

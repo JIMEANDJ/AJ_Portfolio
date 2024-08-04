@@ -1,30 +1,32 @@
 {
-  "header": [
-    {
-      "link": "#inicio",
-      "text": "Home"
-    },
-    {
-      "link": "#habilidades",
-      "text": "Skills"
-    },
-    {
-      "link": "#servicios",
-      "text": "Services"
-    },
-    {
-      "link": "#proyectos",
-      "text": "Project"
-    },
-    {
-      "link": "#testimonios",
-      "text": "Testimonials"
-    },
-    {
-      "link": "#contacto",
-      "text": "Contact"
-    }
-  ],
+  "headerNavT": {
+    "headerNavContent": [
+      {
+        "link": "#inicio",
+        "text": "Home"
+      },
+      {
+        "link": "#habilidades",
+        "text": "Skills"
+      },
+      {
+        "link": "#servicios",
+        "text": "Services"
+      },
+      {
+        "link": "#proyectos",
+        "text": "Project"
+      },
+      {
+        "link": "#testimonios",
+        "text": "Testimonials"
+      },
+      {
+        "link": "#contacto",
+        "text": "Contact"
+      }
+    ]
+  },
   "hero": {
     "title1": "Backend Developer",
     "title2": " and Blockchain",
@@ -42,12 +44,7 @@
     ],
     "heroContent": [
       {
-        "count": "2+",
-        "text": "Years of experience in web development"
-      },
-      {
-        "count": "10+",
-        "text": "Projects worked throughout my career"
+        "count": "Developing engineering solutions for more than 10 years"
       }
     ]
   },
