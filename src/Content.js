@@ -72,7 +72,7 @@ export const content = {
   },
   skills: {
     title: 'Habilidades',
-    subtitle: 'Mis habilidades',
+    //subtitle: 'Mis habilidades',
     skills_content: [
       {
         name: 'React.js',
@@ -109,7 +109,7 @@ export const content = {
   },
   services: {
     title: 'Servicios',
-    subtitle: '¿Que ofrezco?',
+    //subtitle: '¿Que ofrezco?',
     service_content: [
       {
         title: 'Desarrollo de APIs RESTFul',
@@ -130,7 +130,7 @@ export const content = {
   },
   Projects: {
     title: 'Proyectos',
-    subtitle: 'Proyectos desarrollados',
+    //subtitle: 'Proyectos desarrollados',
     image: person_project,
     project_content: [
       {
@@ -157,7 +157,7 @@ export const content = {
   },
   Testimonials: {
     title: 'Testimonios',
-    subtitle: 'Comentarios de mis clientes',
+    //subtitle: 'Comentarios de mis clientes',
     testimonials_content: [
       {
         review:
@@ -187,7 +187,7 @@ export const content = {
   },
   Hireme: {
     title: 'Contrátame',
-    subtitle: 'PARA TUS PROYECTOS',
+    //subtitle: 'PARA TUS PROYECTOS',
     image1: Hireme_person,
     para: 'Con una sólida experiencia en desarrollo backend y un compromiso constante con la innovación y el aprendizaje, ofrezco soluciones de alta calidad que impulsan el rendimiento y la eficiencia. Mi habilidad para desarrollar APIs robustas, gestionar bases de datos, optimizar el rendimiento y garantizar la seguridad, junto con mi conocimiento en blockchain, me convierten en el candidato ideal para llevar sus proyectos al siguiente nivel',
     btnText: 'Contáctame',
