@@ -15,7 +15,7 @@
       },
       {
         "link": "#proyectos",
-        "text": "Project"
+        "text": "Projects"
       },
       {
         "link": "#testimonios",
@@ -50,8 +50,8 @@
   },
   "hireme": {
     "title": "Hire me",
-    "subtitle": "For you projects",
-    "text": "A strong backend development experience and a constant commitment to innovation and learning, I deliver high-quality solutions that drive performance and efficiency. My ability to develop robust APIs, manage databases, optimize performance and ensure security, along with my knowledge of blockchain, make me the ideal candidate to take your projects to the next level.",
+    "subtitle": "For your projects",
+    "text": "With strong backend development experience and a constant commitment to innovation and learning, I deliver high-quality solutions that drive performance and efficiency. My ability to develop robust APIs, manage databases, optimize performance, and ensure security, along with my knowledge of blockchain, make me the ideal candidate to take your projects to the next level.",
     "btnText": "Contact me"
   },
   "servicesT": {
@@ -60,48 +60,48 @@
     "serviceContent": [
       {
         "title": "RESTFul API development",
-        "para": "Creation of programming interfaces for the communication of one or several applications",
+        "para": "Creation of programming interfaces for the communication of one or several applications.",
         "logo": "../../assets/images/Services/codigo.png"
       },
       {
         "title": "Performance optimization",
-        "para": "Improvements in efficiency and response speed in applications in addition to identifying performance problems",
+        "para": "Improvements in efficiency and response speed in applications, in addition to identifying performance problems.",
         "logo": "../../assets/images/Services/rendimiento.png"
       },
       {
         "title": "Application security",
-        "para": "Implementation of security measures to protect the application and user data",
+        "para": "Implementation of security measures to protect the application and user data.",
         "logo": "../../assets/images/Services/seguridad-informatica.png"
       }
     ]
   },
   "skillsT": {
     "title": "Skills",
-    "subtitle": "Mis habilidades",
+    "subtitle": "My skills",
     "skillsContent": [
       {
         "name": "React.js",
-        "para": "Creating interfaces"
+        "para": "Creating interfaces."
       },
       {
         "name": "Python",
-        "para": "Code Simplicity"
+        "para": "Code simplicity."
       },
       {
         "name": "Django",
-        "para": "Adaptability"
+        "para": "Adaptability."
       },
       {
         "name": "PostgreSQL",
-        "para": "Power and performance"
+        "para": "Power and performance."
       },
       {
         "name": "MySQL",
-        "para": "Efficient data management"
+        "para": "Efficient data management."
       },
       {
         "name": "SQLite3",
-        "para": "Light, portable and efficient"
+        "para": "Light, portable, and efficient."
       }
     ]
   },
@@ -110,7 +110,7 @@
     "subtitle": "Developed projects",
     "projectContent": [
       {
-        "title": "Shopping cart",
+        "title": "Shopping Cart",
         "link": "https://www.google.com/"
       },
       {
@@ -122,23 +122,22 @@
         "link": "https://www.google.com/"
       },
       {
-        "title": "Api RESTFul",
+        "title": "RESTFul API",
         "link": "https://www.google.com/"
       }
     ]
   },
-
   "contacts": {
-    "title": "Send me a email or follow me in my social media",
+    "title": "Send me an email or follow me on my social media",
     "subtitle": "",
     "socialMedia": [
       {
         "text": "elpaitonero@gmail.com",
-        "link": "elpaitonero@gmail.com"
+        "link": "mailto:elpaitonero@gmail.com"
       },
       {
         "text": "+57 354 5744 5847",
-        "link": "https://wa.me/1234567890"
+        "link": "https://wa.me/5735457445847"
       },
       {
         "text": "paitonero",
@@ -146,9 +145,7 @@
       }
     ]
   },
-   
-    "resenas": {
-    "title": "Reviews",
-      }
-  
+  "resenas": {
+    "title": "Reviews"
+  }
 }
