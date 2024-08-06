@@ -13,9 +13,7 @@ const Services = () => {
         <h2 className="title text-dark2" data-aos="fade-down">
           {t("servicesT.title")}
         </h2>
-        <h4 className="subtitle text-dark2" data-aos="fade-down">
-          {t("servicesT.subtitle")}
-        </h4>
+
         <br />
         <div className="flex gap-5 justify-between flex-wrap group">
           {servicesT.serviceContent.map((content, i) => (
