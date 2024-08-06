@@ -23,9 +23,7 @@ const Projects = () => {
           <h2 className="title text-grayAsh" data-aos="fade-down">
             {t("projectT.title")}
           </h2>
-          <!--<h4 className="subtitle text-grayAsh" data-aos="fade-down">
-            {t("projectT.subtitle")}
-          </h4>-->
+          
           <br />
         </div>
         <div className="flex items-start lg:flex-row flex-col gap-5">
