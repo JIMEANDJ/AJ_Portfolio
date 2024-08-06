@@ -9,14 +9,21 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { useState } from "react";
 
+
+import { servicesT } from "../translations/ES/global.json"
+import { useTranslation } from "react-i18next";
+
+
 const Testimonials = () => {
+  const { resenas } = content
+  const { t } = useTranslation("global")
   const { Testimonials } = content;
   const [activeIndex, setActiveIndex] = useState(0);
   return (
     <section>
       <div className="md:container px-5 pt-14">
         <h2 className="title text-dark2" data-aos="fade-down">
-          {Testimonials.title}
+            {t("resenas.title")}
         </h2>
 
         <br />
