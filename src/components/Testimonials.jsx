@@ -18,9 +18,7 @@ const Testimonials = () => {
         <h2 className="title text-dark2" data-aos="fade-down">
           {Testimonials.title}
         </h2>
-        <h4 className="subtitle text-dark2" data-aos="fade-down">
-          {Testimonials.subtitle}
-        </h4>
+
         <br />
         <Swiper
           direction={"vertical"}
