@@ -27,7 +27,6 @@
       }
     ]
   },
-
   "hero": {
     "title1": "Desarrollador Backend",
     "title2": " y Blockchain",
@@ -45,69 +44,67 @@
     ],
     "heroContent": [
       {
-        "count": "Desarrollando soluciones de ingenieria por más de 10 años"
+        "count": "Desarrollando soluciones de ingeniería por más de 10 años"
       }
     ]
   },
   "hireme": {
     "title": "Contrátame",
     "subtitle": "Para tus proyectos",
-    "text": "Con una sólida experiencia en desarrollo backend y un compromiso constante con la innovación y el aprendizaje, ofrezco soluciones de alta calidad que impulsan el rendimiento y la eficiencia. Mi habilidad para desarrollar APIs robustas, gestionar bases de datos, optimizar el rendimiento y garantizar la seguridad, junto con mi conocimiento en blockchain, me convierten en el candidato ideal para llevar sus proyectos al siguiente nivel",
+    "text": "Con una sólida experiencia en desarrollo backend y un compromiso constante con la innovación y el aprendizaje, ofrezco soluciones de alta calidad que impulsan el rendimiento y la eficiencia. Mi habilidad para desarrollar APIs robustas, gestionar bases de datos, optimizar el rendimiento y garantizar la seguridad, junto con mi conocimiento en blockchain, me convierten en el candidato ideal para llevar sus proyectos al siguiente nivel.",
     "btnText": "Contáctame"
   },
   "servicesT": {
     "title": "Servicios",
-    "subtitle": "¿Que ofrezco?",
+    "subtitle": "¿Qué ofrezco?",
     "serviceContent": [
       {
         "title": "Desarrollo de APIs RESTFul",
-        "para": "Creacion de interfaces de programación para la comunicación de una o varias aplicaciones",
+        "para": "Creación de interfaces de programación para la comunicación de una o varias aplicaciones.",
         "logo": "../../assets/images/Services/codigo.png"
       },
       {
         "title": "Optimización de rendimiento",
-        "para": "Mejoras en eficiencia y velocidad de respuesta en las aplicaciones además de identificar los problemas en el redimiento",
+        "para": "Mejoras en eficiencia y velocidad de respuesta en las aplicaciones, además de identificar los problemas en el rendimiento.",
         "logo": "../../assets/images/Services/rendimiento.png"
       },
       {
         "title": "Seguridad de la aplicación",
-        "para": "Implementación de medidas de seguridad para proteger la aplicación y los datos de los usuarios",
+        "para": "Implementación de medidas de seguridad para proteger la aplicación y los datos de los usuarios.",
         "logo": "../../assets/images/Services/seguridad-informatica.png"
       }
     ]
   },
-
   "skillsT": {
     "title": "Habilidades",
     "subtitle": "Mis habilidades",
     "skillsContent": [
       {
         "name": "React.js",
-        "para": "Creación de interfaces"
+        "para": "Creación de interfaces."
       },
       {
         "name": "Python",
-        "para": "Simplicidad de código"
+        "para": "Simplicidad de código."
       },
       {
         "name": "Django",
-        "para": "Adaptabilidad"
+        "para": "Adaptabilidad."
       },
       {
         "name": "PostgreSQL",
-        "para": "Poder y rendimiento"
+        "para": "Poder y rendimiento."
       },
       {
         "name": "MySQL",
-        "para": "Manejo eficiente de datos"
+        "para": "Manejo eficiente de datos."
       },
       {
         "name": "SQLite3",
-        "para": "Ligero, portatil y eficiente"
+        "para": "Ligero, portátil y eficiente."
       }
     ]
   },
-
   "projectT": {
     "title": "Proyectos",
     "subtitle": "Proyectos desarrollados",
@@ -125,23 +122,22 @@
         "link": "https://www.google.com/"
       },
       {
-        "title": "Api RESTFul",
+        "title": "API RESTFul",
         "link": "https://www.google.com/"
       }
     ]
   },
-
   "contacts": {
     "title": "Envíame un correo o sígueme en mis redes sociales",
     "subtitle": "",
     "socialMedia": [
       {
         "text": "elpaitonero@gmail.com",
-        "link": "elpaitonero@gmail.com"
+        "link": "mailto:elpaitonero@gmail.com"
       },
       {
         "text": "+57 354 5744 5847",
-        "link": "https://wa.me/1234567890"
+        "link": "https://wa.me/5735457445847"
       },
       {
         "text": "paitonero",
@@ -149,7 +145,7 @@
       }
     ]
   },
-    "resenas": {
-    "title": "Reseñas",
-      }
+  "resenas": {
+    "title": "Reseñas"
+  }
 }
